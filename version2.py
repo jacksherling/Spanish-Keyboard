@@ -1,7 +1,5 @@
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
-#import pygame
-#from pygame import *
 import time
 
 # variable initializaition
@@ -70,7 +68,7 @@ def check(key):
         lastkey = False
         t = 0
 
-
+# checks if key is released and should be translated
 def check_release(key):
     global active, keyboard_controller, lastkey, t
     try:
